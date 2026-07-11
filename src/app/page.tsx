@@ -30,15 +30,7 @@ export default function Home() {
     <div className="grid grid-rows-[60px_1fr_40px] items-center justify-items-center min-h-screen p-6 pb-12 gap-8 sm:p-12 font-[family-name:var(--font-geist-sans)] bg-neutral-50 dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100">
       {/* HEADER */}
       <header className="row-start-1 w-full max-w-5xl flex items-center justify-between border-b border-solid border-black/[0.08] dark:border-white/[0.08] pb-4">
-        <div className="flex items-center gap-3">
-          <Image
-            className="dark:invert"
-            src="/next.svg"
-            alt="Company Logo"
-            width={110}
-            height={24}
-            priority
-          />
+        <div className="flex items-center gap-2">
           <span className="text-xs uppercase tracking-widest font-semibold px-2 py-0.5 rounded bg-blue-500/10 text-blue-600 dark:text-blue-400">
             ATS Onboard
           </span>
