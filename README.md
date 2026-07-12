@@ -1,8 +1,8 @@
-# OnBoard
+# StackApply
 
 <!-- dash-content-start -->
 
-**OnBoard** is a personal job application tracker and analytics dashboard. It helps you log every job you apply for, track what stage each application is in (Applied, Screening, Interview, Offer, Rejected, etc.), and see insights into your job search activity — how many applications you've sent today, this week, this month, or over the whole year.
+**StackApply** is a personal job application tracker and analytics dashboard. It helps you log every job you apply for, track what stage each application is in (Applied, Screening, Interview, Offer, Rejected, etc.), and see insights into your job search activity — how many applications you've sent today, this week, this month, or over the whole year.
 
 Built with [Next.js](https://nextjs.org/) (bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app)) and TypeScript, deployed on Cloudflare Workers as a [static website](https://developers.cloudflare.com/workers/static-assets/).
 
