@@ -1,8 +1,8 @@
-# OnBoard
+# StackApply
 
 <!-- dash-content-start -->
 
-**OnBoard** is a personal job application tracker and analytics dashboard. It helps you log every job you apply for, track what stage each application is in (Applied, Screening, Interview, Offer, Rejected, etc.), and see insights into your job search activity — how many applications you've sent today, this week, this month, or over the whole year.
+**StackApply** is a personal job application tracker and analytics dashboard. It helps you log every job you apply for, track what stage each application is in (Applied, Screening, Interview, Offer, Rejected, etc.), and see insights into your job search activity how many applications you've sent today, this week, this month, or over the whole year.
 
 Built with [Next.js](https://nextjs.org/) (bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app)) and TypeScript, deployed on Cloudflare Workers as a [static website](https://developers.cloudflare.com/workers/static-assets/).
 
@@ -10,11 +10,16 @@ This project uses [OpenNext](https://opennext.js.org/) via the [OpenNext Cloudfl
 
 <!-- dash-content-end -->
 
+Job hunting shouldn't mean losing track of where you applied, forgetting to follow up, or wondering if you're actually making progress. StackApply turns your scattered applications buried in emails, spreadsheets, and sticky notes into one clear, organized pipeline. Log every application in seconds, watch each one move from Applied to Offer, and see the real numbers behind your job search instead of just a gut feeling. Less mental overhead, more momentum so you can spend your energy on the interviews, not the bookkeeping.
+
 ## Features
 
-- **Application logging** — record each job you apply to, including company, role, date applied, and source/platform
-- **Stage tracking** — track where each application stands (Applied → Screening → Interview → Offer → Rejected, or a custom pipeline), along with notes and details per stage
-- **Activity analytics** — see how many applications you've submitted today, this week, this month, or over the year, to help you stay consistent and spot trends in your job search
+- **Application logging** — record each job you apply to, including company, role, date applied, source/platform (LinkedIn, company site, referral, recruiter, etc.), salary range, location, and job posting link, all in one searchable place
+- **Stage tracking** — track where each application stands (Applied → Screening → Interview → Offer → Rejected, or a custom pipeline you define), with timestamps, notes, and contact details logged at every stage
+- **Reminders & follow-ups** — flag applications that need a follow-up email or are waiting past a typical response window, so nothing quietly falls through the cracks
+- **Activity analytics** — visual breakdowns of applications sent today, this week, this month, and over the year, plus stage-conversion rates (e.g. application → interview rate) to help you understand what's actually working
+- **Search & filters** — quickly filter your application history by company, status, date range, or source to answer questions like "which companies have I already applied to?"
+- **Notes per application** — keep interview prep notes, recruiter names, and personal impressions attached directly to each entry instead of scattered across notebooks or spreadsheets
 
 ## Tech Stack
 
@@ -53,7 +58,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 ## Deploying To Production
 
 | Command                           | Action                                       |
-| :-------------------------------- | :------------------------------------------- |
+| :--------------------------------- | :-------------------------------------------- |
 | `npm run build`                   | Build your production site                   |
 | `npm run preview`                 | Preview your build locally, before deploying |
 | `npm run build && npm run deploy` | Deploy your production site to Cloudflare    |
@@ -61,7 +66,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Environment Variables
 
-If OnBoard relies on any environment variables (API keys, database URLs, etc.), define them in `.dev.vars` for local development and configure them as [Cloudflare Workers secrets](https://developers.cloudflare.com/workers/configuration/secrets/) for production. Never commit `.dev.vars` or any file containing real secrets — make sure they're listed in `.gitignore`.
+If StackApply relies on any environment variables (API keys, database URLs, etc.), define them in `.dev.vars` for local development and configure them as [Cloudflare Workers secrets](https://developers.cloudflare.com/workers/configuration/secrets/) for production. Never commit `.dev.vars` or any file containing real secrets — make sure they're listed in `.gitignore`.
 
 ```bash
 npx wrangler secret put SECRET_NAME
